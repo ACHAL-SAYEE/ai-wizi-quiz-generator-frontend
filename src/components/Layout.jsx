@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
                 <Brain className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-foreground">DeepKlarity Wiki Quiz</h1>
+                <h1 className="text-2xl font-bold text-foreground">Wiki Quiz</h1>
                 <p className="text-sm text-muted-foreground">AI-Powered Wikipedia Quiz Generator</p>
               </div>
             </div>

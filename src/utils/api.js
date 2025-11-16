@@ -1,4 +1,4 @@
-const serverUrl=" "
+const serverUrl="https://ai-wizi-quiz-generator-backened.onrender.com"
 export async function generateQuiz(url) {
   const response = await fetch(`${serverUrl}/generate`, {
     method: "POST",
