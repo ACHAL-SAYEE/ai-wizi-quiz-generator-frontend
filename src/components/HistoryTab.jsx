@@ -32,7 +32,7 @@ const HistoryTab = () => {
     setLoading(true);
     try {
       const data = await fetchQuizHistory();
-
+console.log("datax ",data)
       // Your backend doesn't send question_count, so compute it
       const transformed = data.map(item => ({
         ...item,

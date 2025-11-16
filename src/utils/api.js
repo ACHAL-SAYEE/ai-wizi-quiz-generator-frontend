@@ -1,5 +1,6 @@
+const serverUrl=" "
 export async function generateQuiz(url) {
-  const response = await fetch("http://localhost:8000/generate", {
+  const response = await fetch(`${serverUrl}/generate`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -16,13 +17,13 @@ export async function generateQuiz(url) {
 }
 
 export async function fetchQuizHistory() {
-  const res = await fetch("http://localhost:8000/history");
+  const res = await fetch(`${serverUrl}/history`);
   if (!res.ok) throw new Error("Failed to fetch history");
   return res.json();
 }
 
 export async function fetchQuizDetails(id) {
-  const res = await fetch(`http://localhost:8000/detail/${id}`);
+  const res = await fetch(`${serverUrl}/detail/${id}`);
   if (!res.ok) throw new Error("Failed to fetch quiz details");
   return res.json();
 }

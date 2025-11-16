@@ -77,11 +77,11 @@ const QuizDetailsModal = ({ open, onClose, quiz, loading }) => {
                 <p className="text-muted-foreground">{quiz.summary}</p>
 
                 {/* Entities */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <Entity label="People" icon={Users} items={quiz.key_entities.people} />
                   <Entity label="Organizations" icon={Building2} items={quiz.key_entities.organizations} />
                   <Entity label="Locations" icon={MapPin} items={quiz.key_entities.locations} />
-                </div>
+                </div> */}
 
                 {/* Sections */}
                 <div>
